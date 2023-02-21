@@ -1,2 +1,4 @@
 *.swp
 ~
+_putchar
+main.c

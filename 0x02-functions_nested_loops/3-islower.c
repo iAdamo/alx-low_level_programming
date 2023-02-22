@@ -9,21 +9,12 @@
 
 int _islower(int c)
 {
-	int H = 72;
-	int o = 111;
-	int l = 108;
-
-	if (c == H)
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
 	{
 		return (0);
 	}
-	if (c == o)
-	{
-		return (1);
-	}
-	if (c == l)
-	{
-		return (1);
-	}
-	return (0);
 }

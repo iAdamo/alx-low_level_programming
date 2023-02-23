@@ -55,4 +55,9 @@ Write a function that computes the absolute value of an integer.
 Prototype: int _abs(int);
 FYI: The standard library provides a similar function: abs. Run man abs to learn more.
 
+7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 
+Write a function that prints the last digit of a number.
+
+Prototype: int print_last_digit(int);
+Returns the value of the last digit

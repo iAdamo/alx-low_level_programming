@@ -12,4 +12,6 @@ PROJECTS:
 
 0x03. C - Debugging
 
-s
+0x04. C - More functions, more nested loops
+
+

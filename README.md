@@ -1,20 +1,20 @@
 C Programming
 
-alx-low_level_programming:
+<a href="https://github.com/iAdamo/alx-low_level_programming">alx-low_level_programming:</a>
 
-PROJECTS:
+<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main">PROJECTS:</a>
 
-0x00. C - Hello, World
+<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x00-hello_world">0x00. C - Hello, World</a>
 
-0x01. C - Variables, if, else, while
+<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x01-variables_if_else_while">0x01. C - Variables, if, else, while</a>
 
-0x02. C - Functions, nested loop
+<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x02-functions_nested_loops">0x02. C - Functions, nested loop</a>
 
-0x03. C - Debugging
+<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x03-debugging">0x03. C - Debugging</a>
 
-0x04. C - More functions, more nested loops
+<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x04-more_functions_nested_loops">0x04. C - More functions, more nested loops</a>
 
-0x05. C - Pointers, arrays and strings
+<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x05-pointers_arrays_strings">0x05. C - Pointers, arrays and strings</a>
 
-<a href="">0x06. C - More pointers, arrays and strings</a>
+<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x06-pointers_arrays_strings">0x06. C - More pointers, arrays and strings</a>
 

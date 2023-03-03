@@ -1,8 +1,8 @@
-C Programming
+<h1>C </h1><h2>Programming</h2>
 
-<a href="https://github.com/iAdamo/alx-low_level_programming">alx-low_level_programming:</a>
+<h2><a href="https://github.com/iAdamo/alx-low_level_programming">alx-low_level_programming:</a></h2>
 
-<h1>PROJECTS:</h2>
+<h3>PROJECTS:</h3>
 
 <a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x00-hello_world">0x00. C - Hello, World</a>
 

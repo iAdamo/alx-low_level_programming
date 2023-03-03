@@ -2,7 +2,7 @@ C Programming
 
 <a href="https://github.com/iAdamo/alx-low_level_programming">alx-low_level_programming:</a>
 
-<a href="https://github.com/iAdamo/alx-low_level_programming/tree/main">PROJECTS:</a>
+<h1>PROJECTS:</h2>
 
 <a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x00-hello_world">0x00. C - Hello, World</a>
 

@@ -1,4 +1,6 @@
 *.swp
-~
-_putchar.c
-main.c
+*.swo
+*~
+~*
+_*char.c
+*main.c

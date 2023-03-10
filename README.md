@@ -1,6 +1,6 @@
 <h2>Alx-Low Level Programming</h2>
 
-<h3>C Programming Projects.</h3>
+<h3>C Programming Projects</h3>
 
 
 <h4>PROJECTS:</h4>
@@ -104,4 +104,13 @@
 </dt>
 </dl>
 
-
+<dl>
+<dt><a href="">0x09. C - Static libraries</a>
+<ul style="list-style-type:circle;">
+<li>C</li>
+<li>By: Julien Barbier</li>
+<li>Weight: 1</li>
+<li></li>
+</ul>
+</dt>
+</dl>

@@ -105,12 +105,12 @@
 </dl>
 
 <dl>
-<dt><a href="">0x09. C - Static libraries</a>
+<dt><a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x09-static_libraries">0x09. C - Static libraries</a>
 <ul style="list-style-type:circle;">
 <li>C</li>
 <li>By: Julien Barbier</li>
 <li>Weight: 1</li>
-<li></li>
+<li>Project over - took place from Mar 10, 2023 6:00 AM to Mar 11, 2023 6:00 AM</li>
 </ul>
 </dt>
 </dl>

@@ -116,7 +116,7 @@
 </dl>
 
 <dl>
-<dt><a href="[200~https://github.com/iAdamo/alx-low_level_programming/tree/main/0x0A-argc_argv">0x0A. C - argc, argv</a>
+<dt><a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x0A-argc_argv">0x0A. C - argc, argv</a>
 <ul style="list-style-type:circle;">
 <li>C</li>
 <li>By: Julien Barbier</li>

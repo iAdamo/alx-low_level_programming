@@ -5,7 +5,7 @@
   * main - Main entry
   * @argc: First parameter
   * @argv: Second parameter
-  * Description: 
+  * Description: prints the number of arguments passed into it.
   * Return: exit(EXIT_SUCCESS)
   */
 

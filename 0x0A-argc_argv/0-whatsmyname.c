@@ -9,10 +9,9 @@
   * Return: exit(EXIT_SUCCESS)
   */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	while (argc--)
-		printf("%s\n", *argv++);
+	printf("%s\n", *argv);
 
 	exit(EXIT_SUCCESS);
 }

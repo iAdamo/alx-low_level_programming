@@ -5,7 +5,8 @@
   * main - Main entry
   * @argc: argument count
   * @argv: argument vector
-  * Description: program that adds positive numbers  * Return: 0 success else 1
+  * Description: program that adds positive number
+  * Return: 0 success else 1
   */
 
 int main(int argc, char *argv[])

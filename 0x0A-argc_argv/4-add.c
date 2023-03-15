@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 			}
 			else
 			{
-				sum += atoi(argv[i]);
+				sum = sum + atoi(argv[i]);
 			}
 		}
 		printf("%d\n", sum);

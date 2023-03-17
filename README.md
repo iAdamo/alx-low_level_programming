@@ -120,7 +120,17 @@
 <ul style="list-style-type:circle;">
 <li>C</li>
 <li>By: Julien Barbier</li>
-<li>Project over - took place from Mar 10, 2023 6:00 AM to Mar 11, 2    023 6:00 AM</li>
+<li>Project over - took place from Mar 10, 2023 6:00 AM to Mar 11, 2023 6:00 AM</li>
+</ul>
+</dt>
+</dl>
+
+<dl>
+<dt><a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x0B-malloc_free">0x0B. C - malloc, free</a>
+<ul style="list-style-type:circle;">
+<li>C</li>
+<li>By: Julien Barbier</li>
+<li>Project over - took place from Mar 13, 2023 6:00 AM to Mar 15, 2023 6:00 AM</li>
 </ul>
 </dt>
 </dl>

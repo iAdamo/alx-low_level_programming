@@ -134,3 +134,13 @@
 </ul>
 </dt>
 </dl>
+
+<dl>
+<dt><a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x0C-More_malloc_free">0x0C. C - More malloc, free</a>
+<ul style="list-style-type:circle;">
+<li>C</li>
+<li>By: Julien Barbier</li>
+<li>Project over - took place from Mar 16, 2023 6:00 AM to Mar 17, 2023 6:00 AM</li>
+</ul>
+</dt>
+</dl>

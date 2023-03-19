@@ -136,7 +136,7 @@
 </dl>
 
 <dl>
-<dt><a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x0C-More_malloc_free">0x0C. C - More malloc, free</a>
+<dt><a href="https://github.com/iAdamo/alx-low_level_programming/tree/main/0x0C-more_malloc_free">0x0C. C - More malloc, free</a>
 <ul style="list-style-type:circle;">
 <li>C</li>
 <li>By: Julien Barbier</li>

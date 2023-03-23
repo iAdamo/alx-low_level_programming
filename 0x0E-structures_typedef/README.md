@@ -23,8 +23,8 @@
 </dl>
 
 <dl>
-<dt>
-<ul>2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad
+<dt>2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad
+<ul>
 <li>Write a function that prints a struct dog</li>
 <li>`Prototype: void print_dog(struct dog *d);`</li>
 <li>Format: see example bellow</li>

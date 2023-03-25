@@ -1,6 +1,6 @@
-### 0x0F. C - Function pointers
+## [0x0F. C - Function pointers :file_folder:](0x0F-function_pointers)
 
-### TASKS:
+## TASKS: :page_with_curl:
 
 #### [0. What's my name](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x0F-function_pointers/0-print_name.c)
 
@@ -24,10 +24,10 @@
 Usage: calc num1 operator num2
 - You can assume num1 and num2 are integers, so use the atoi function to convert them from the string input to int
 - operator is one of the following:
-+: addition
--: subtraction
-*: multiplication
-/: division
+  - +: addition
+  - -: subtraction
+  - *: multiplication
+  - /: division
 %: modulo
 - The program prints the result of the operation, followed by a new line
 - You can assume that the result of all operations can be stored in an int

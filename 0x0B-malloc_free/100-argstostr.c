@@ -24,11 +24,15 @@ char *argstostr(int ac, char **av)
 	int i;
 	int len = 0, j = 0, n = 0;
 
+	if (ac == 0 || av == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i < ac; i++)
 	{
 		len += _strlen(av[i]) + 1;
 	}
-	ptr = malloc(sizeof(char) * len);
+	ptr = malloc(sizeof(char) * len + 1);
 	if (ptr == NULL)
 	{
 		return (NULL);

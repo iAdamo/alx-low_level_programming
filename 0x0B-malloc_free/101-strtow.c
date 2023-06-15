@@ -5,7 +5,7 @@
  * @ptr: two dimensional pointer
  * Return: return two dimensional array of data
 */
-void **ptrData(char *str, char **ptr)
+char **ptrData(char *str, char **ptr)
 {
 	int i, j, b;
 	int a = 0;
@@ -24,6 +24,7 @@ void **ptrData(char *str, char **ptr)
 			a++;
 		}
 	}
+	return (ptr);
 }
 /**
  * strtow - splits a string into words
@@ -32,11 +33,11 @@ void **ptrData(char *str, char **ptr)
 */
 char **strtow(char *str)
 {
-	char **ptr;
-	int i, j, b, len, row;
+	char **ptr, **ptrs;
+	int i, row;
 	int col = 0, wid = 0, a = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
 	}
@@ -69,6 +70,6 @@ char **strtow(char *str)
 		}
 	}
 	ptr[wid] = NULL;
-	ptrData(str, ptr);
-	return (ptr);
+	ptrs = ptrData(str, ptr);
+	return (ptrs);
 }

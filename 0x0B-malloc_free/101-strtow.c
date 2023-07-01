@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * initializes data from a 1-di_array to 2-di_array
+ * finalptr - initializes data from a 1-di_array to 2-di_array
  * @str: one dimensional pointer data to copy
  * @ptr: two dimensional pointer
  * Return: return two dimensional array of data
@@ -29,7 +29,7 @@ char **finalptr(char *str, char **ptr)
 	return (ptr);
 }
 /**
- * wordCount - counts the amount of non spaced words in a string
+ * wordcount - counts the amount of non spaced words in a string
  * @str: strings to go through
  * Return: number of non spaced words
 */
@@ -63,6 +63,8 @@ char **strtow(char *str)
 	if (str == NULL)
 		return (NULL);
 	len = wordcount(str);
+	if (len == 0)
+		return (NULL);
 	ptr = malloc(sizeof(char *) * (len + 1));
 	if (ptr == NULL)
 		return (NULL);

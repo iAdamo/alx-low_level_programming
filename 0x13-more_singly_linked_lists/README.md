@@ -178,3 +178,57 @@ julien@ubuntu:~/0x13. More singly linked lists$
 - GitHub repository: `alx-low_level_programming`
 - Directory: `0x13-more_singly_linked_lists`
 - File: `2-add_nodeint.c`
+
+
+#### **3. Add node at the end**
+
+Write a function that adds a new node at the end of a listint_t list.
+
+- Prototype: `listint_t *add_nodeint_end(listint_t **head, const int n);`
+- Return: the address of the new element, or `NULL` if it failed
+```
+julien@ubuntu:~/0x13. More singly linked lists$ cat 3-main.c 
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    listint_t *head;
+
+    head = NULL;
+    add_nodeint_end(&head, 0);
+    add_nodeint_end(&head, 1);
+    add_nodeint_end(&head, 2);
+    add_nodeint_end(&head, 3);
+    add_nodeint_end(&head, 4);
+    add_nodeint_end(&head, 98);
+    add_nodeint_end(&head, 402);
+    add_nodeint_end(&head, 1024);
+    print_listint(head);
+    return (0);
+}
+julien@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_nodeint_end.c 0-print_listint.c -o d
+julien@ubuntu:~/0x13. More singly linked lists$ ./d 
+0
+1
+2
+3
+4
+98
+402
+1024
+julien@ubuntu:~/0x13. More singly linked lists$
+``` 
+**Repo:**
+
+- GitHub repository: `alx-low_level_programming`
+- Directory: `0x13-more_singly_linked_lists`
+- File: `3-add_nodeint_end.c`
+

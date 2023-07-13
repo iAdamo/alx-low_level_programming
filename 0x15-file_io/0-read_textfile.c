@@ -20,22 +20,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	if (fd < 0)
 	{
 		free(buffer);
 		return (0);
 	}
 	bytes = read(fd, buffer, letters);
-	if (bytes == -1)
+	if (bytes < 0)
 	{
-		free(buffer);
-		close(fd);
+		free(bytes);
 		return (0);
 	}
-	rtrn = write(STDIN_FILENO, buffer, bytes);
+	rtrn = write(STDOUT_FILENO, buffer, bytes);
 	free(buffer);
 	close(fd);
-	if (rtrn == -1)
+
+	if (rtrn < 0)
 		return (0);
 	return (bytes);
 }

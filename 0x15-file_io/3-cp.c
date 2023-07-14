@@ -6,7 +6,7 @@
 */
 void copy_program(char *file_from, char *file_to)
 {
-	int fd, buff_size = 1024, bytes;
+	int fd, buff_size = 1024, bytes, bytes1;
 	char *buffer;
 
 	while (buff_size)
@@ -28,8 +28,8 @@ void copy_program(char *file_from, char *file_to)
 		}
 		umask(0002);
 		fd = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-		bytes = write(fd, buffer, bytes);
-		if (fd == -1 || bytes == -1)
+		bytes1 = write(fd, buffer, bytes);
+		if (fd == -1 || bytes1 == -1)
 		{
 			free(buffer);
 			close(fd);

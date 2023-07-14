@@ -6,39 +6,39 @@
 */
 void copy_program(char *file_from, char *file_to)
 {
-	int fd_from, fd_to, buff_size = 1024, bytes;
+	int fd, buff_size = 1024, bytes;
 	char *buffer;
 
 	while (buff_size)
 	{
-		fd_from = open(file_from, O_RDONLY);
+		fd = open(file_from, O_RDONLY);
 		buffer = malloc(sizeof(char) * buff_size);
-		bytes = read(fd_from, buffer, buff_size);
-		if (fd_from == -1 || buffer == NULL || bytes == -1)
+		bytes = read(fd, buffer, buff_size);
+		if (fd == -1 || buffer == NULL || bytes == -1)
 		{
 			free(buffer);
-			close(fd_from);
+			close(fd);
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 			exit(98);
 		}
-		fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-		bytes = write(fd_to, buffer, bytes);
-		if (fd_to == -1 || bytes == -1)
+		if (close(fd) == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+			exit(100);
+		}
+		fd = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+		bytes = write(fd, buffer, bytes);
+		if (fd == -1 || bytes == -1)
 		{
 			free(buffer);
-			close(fd_to);
+			close(fd);
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
 		free(buffer);
-		if (close(fd_from) == -1)
+		if (close(fd) == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
-			exit(100);
-		}
-		if (close(fd_to) == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 			exit(100);
 		}
 		if (buff_size > bytes)

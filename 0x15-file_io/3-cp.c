@@ -1,59 +1,67 @@
 #include "main.h"
+/**
+ * copy_program -  program that copies the content of a file to another file
+ * @file_from: file to copy from
+ * @file_to: file to copy to
+*/
+void copy_program(char *file_from, char *file_to)
+{
+	int fd, buff_size = 1024, bytes;
+	char *buffer;
 
+	while (buff_size)
+	{
+		fd = open(file_from, O_RDONLY);
+		buffer = malloc(sizeof(char) * buff_size);
+		bytes = read(fd, buffer, buff_size);
+		if (fd == -1 || buffer == NULL || bytes == -1)
+		{
+			free(buffer);
+			close(fd);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+			exit(98);
+		}
+		if (close(fd) == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+			exit(100);
+		}
+		umask(0002);
+		fd = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+		bytes = write(fd, buffer, bytes);
+		if (fd == -1 || bytes == -1)
+		{
+			free(buffer);
+			close(fd);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+			exit(99);
+		}
+		free(buffer);
+		if (close(fd) == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+			exit(100);
+		}
+		if (buff_size > bytes)
+			break;
+		buff_size = buff_size + 1024;
+	}
+}
+/**
+ * main - Main Entry
+ * @ac: argument count
+ * @av: argumemt vectors (array of pointers)
+ * Return: 0 on success
+*/
 int main(int ac, char **av)
 {
-	int fd_to, fd_from;
-	ssize_t bytes;
-	char *file_from, *file_to;
-	char *buffer;
-	int buff_size = 1024;
-
-	/*if the number of argument is not the correct one*/
 	if (ac != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", av[0]);
 		exit(97);
 	}
-	file_from = strdup(av[1]);
-	file_to = strdup(av[2]);
 
-	
-	while (buff_size)
-	{
-		fd_from = open(file_from, O_RDWR);
-		if (fd_from == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
-			exit(98);
-		}
-		buffer = malloc(sizeof(char) * buff_size);
-		if (buffer == NULL)
-			exit(98);
-		bytes = read(fd_from, buffer, buff_size);
-		printf("%ld\n", bytes);
-		if (bytes == -1)
-			return (98);
-
-		/**
-		 * if file_to already exists, truncate it
-		 * if you can not create or if write to file_to fails
-		*/
-		fd_to = open(file_to, O_RDWR | O_CREAT | O_TRUNC, 0664);
-		if (fd_to == -1)
-			exit(99);
-		bytes = write(fd_to, buffer, bytes);
-		printf("%ld\n", bytes);
-		if (bytes == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
-			exit(99);
-		}
-		if (buff_size > bytes)
-			break;
-		free(buffer);
-		close(fd_from);
-		buff_size = buff_size + 1024;
-	}
+	copy_program(av[1], av[2]);
 
 	return (0);
 }

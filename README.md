@@ -1,6 +1,6 @@
-## Alx-Low Level Programming
+## Low Level Programming
 
-### C Programming
+### `C Programming`
 
 
 #### PROJECTS:
@@ -24,6 +24,8 @@
 - [0x10. C - Variadic functions](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x10-variadic_functions)
 - [0x11. C - printf](https://github.com/iAdamo/printf)
 - [0x12. C - Singly linked lists](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x12-singly_linked_lists)
-- [0x13-more_singly_linked_lists](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)
-- [0x14-bit_manipulation](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x14-bit_manipulation)
-- [0x15-file_io](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x15-file_io)
+- [0x13. C - More singly linked lists](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)
+- [0x14. C - Bit manipulation](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x14-bit_manipulation)
+- [0x15. C - File I/O](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x15-file_io)
+- [0x16. C - Simple Shell](https://github.com/damilolaifabiyi/simple_shell)
+- [0x17. C - Doubly linked lists](https://github.com/iAdamo/alx-low_level_programming/tree/main/0x17-doubly_linked_lists)

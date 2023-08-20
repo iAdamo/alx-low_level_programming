@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-
 /**
  * delete_dnodeint_at_index - A function that inserts a node at position.
  * @h: The double pointer to the head.

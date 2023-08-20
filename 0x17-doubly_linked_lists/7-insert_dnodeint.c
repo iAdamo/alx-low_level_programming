@@ -9,45 +9,41 @@
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *node, *len, *temp = *h;
-	size_t count = 0;
+	dlistint_t *node = NULL, *temp = NULL;
+	unsigned int i = 0;
 
 	node = malloc(sizeof(dlistint_t));
 	if (node == NULL)
 		return (NULL);
 	node->n = n;
-	len = *h;
-	while (len->next)
+
+	if (h == NULL || (*h) == NULL)
+		*h = node;
+	else
 	{
-		count++;
-		len = len->next;
-	}
-	if (idx > (count + 1))
-		return (*h);
-	if (idx == count + 1)
-	{
-		len->next = node;
-		node->prev = len;
-		return (*h);
-	}
-	if (idx == 0)
-	{
-		if (*h == NULL)
-			*h = node;
+		temp = *h;
+		while (idx != i++ && temp->next)
+			temp = temp->next;
+		if (temp->next)
+			node->prev = temp->prev;
+		else
+			node->prev = temp;
+		if (idx == i)
+			temp->next = node, node->prev = temp;
+		else if (idx == i - 1)
+		{
+			if (temp->prev)
+				temp->prev->next = node;
+			else
+				*h = node;
+			temp->prev = node;
+			node->next = temp;
+		}
 		else
 		{
-			node->next = *h;
-			(*h)->prev = node;
-			*h = node;
+			free(node);
+			return (NULL);
 		}
-		return (*h);
 	}
-	idx = idx + 1;
-	while (idx--)
-		temp = temp->next;
-	temp->next->prev = node;
-	node->prev = temp;
-	node->next = temp->next;
-	temp->next = node;
-	return (*h);
+	return (node);
 }
